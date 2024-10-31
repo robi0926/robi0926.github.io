@@ -1,0 +1,26 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #b0d4cc;
+    margin: 0%;
+}
+header{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.site-title{
+    position: absolute;
+    font-size:55px;
+    font-weight: lighter;
+    top: 48%;
+    left: 39%;
+}
+nav ul{
+    position: absolute;
+    list-style: none;
+    display: flex;
+    font-size: 30px;
+    gap: 270px;
+    margin: 0%;
+    left: 30%;
+}
