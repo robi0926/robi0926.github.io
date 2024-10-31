@@ -1,26 +1,131 @@
-body{
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #b0d4cc;
-    margin: 0%;
 }
-header{
+
+/* Basic page setup */
+body {
+    background-color: #aec9c9;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
     position: relative;
-    text-align: center;
+}
+
+header img {
+    width: 100%;
+}
+
+.site-title {
     color: white;
-}
-.site-title{
     position: absolute;
-    font-size:55px;
-    font-weight: lighter;
-    top: 48%;
-    left: 39%;
+    top: 150px;
+    left: 32%;
+    font-size: 50px;
 }
-nav ul{
-    position: absolute;
+
+/* Navigation */
+nav ul {
     list-style: none;
-    display: flex;
-    font-size: 30px;
-    gap: 270px;
-    margin: 0%;
-    left: 30%;
+    overflow: hidden;
+    background-color: #d8e7e7;
+}
+
+nav li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    padding: 10px 0;
+    border-right: 2px solid black;
+}
+
+nav li:first-child {
+    border-left: 2px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Content */
+article {
+    background-color: #d8e7e7;
+    padding: 20px;
+    overflow: hidden;
+}
+
+article img {
+    width: 200px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Facts Section */
+.facts {
+    clear: both;
+}
+
+.facts ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.facts li {
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.form-container {
+    background-color: #d8e7e7;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+form textarea {
+    height: 100px;
+}
+
+.options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.options label {
+    display: inline;
+    margin-right: 20px;
+}
+
+button {
+    padding: 5px 20px;
+    background-color: #d8e7e7;
+    border: 1px solid black;
+}
+
+/* Copyright */
+footer {
+    text-align: right;
+    padding-right: 20px;
 }
